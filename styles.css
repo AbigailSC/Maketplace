@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap');
+
+:root {
+    --backgroundPrimary: #0E1015;
+    --backgroundSecundary: #181A20;
+    --textSecundary: #30CA9F;
+    --text: #E2E4E9;
+    --degradatePrimary: #FF1436;
+    --degradateSecundary:#F71260;
+    --box: #353940;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: 'Roboto';
+    color: var(--text);
+}
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 90px;
+    position: fixed;
+    top: 0;
+    padding: 0 64px;
+    border-bottom: 1px solid var(--backgroundSecundary);
+    background: var(--backgroundPrimary);
+}
+
+.logo {
+    height: 44px;
+}
+
+.logoText {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+}
+
+.titulo {
+    font-size: 24px;
+}
+
+.navbar ,
+.navbar-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.navbar-list a {
+    font-size: 18px;
+}
+
+.navbar-list li:first-child > a {
+    font-weight: 600;
+}
+
+.cartIcon {
+    padding: 8px 20px;
+    border-radius: 12px;
+    height: 32px;
+    cursor: pointer;
+    background: linear-gradient(90deg, var(--degradatePrimary) 0%, var(--degradateSecundary) 100%);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background: var(--backgroundPrimary);
+}
+
+#landing {
+    margin-top: 90px;
+    padding:  120px 0;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.landingInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    width: 50%;
+}
+
+.landingInfo h1 {
+    font-size: 48px;
+    width: 70%;
+    min-width: 500px;
+    font-weight: bold;
+    background: -webkit-linear-gradient(var(--degradatePrimary), var(--degradateSecundary));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.landingInfo p {
+    width: 90%;
+}
+
+.landingInfo p > span {
+    font-weight: bold;
+}
+
+.landingInfo a {
+    background: linear-gradient(90deg, var(--degradatePrimary) 0%, var(--degradateSecundary) 100%);
+    width: 160px;
+    padding: 12px 8px;
+    border-radius: 12px;
+    font-weight: bold;
+    display: flex;
+}
+
+.landingInfo a>p {
+    display: flex;
+    align-self: center;
+    justify-content: flex-start;
+}
+
+.cardImg {
+    width: 280px;
+    height: 280px;
+    border-radius: 16px;
+}
+.landingCard {
+    width: 320px;
+    background: var(--backgroundSecundary);
+    padding: 20px;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.landingCardInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.landingCardTop {
+    display: flex;
+    justify-content: space-between;
+}
+
+.landingCardTop h3 {
+    font-weight: 800;
+    font-size: 24px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.landingCardTop span {
+    background-color: var(--box);
+    color: var(--textSecundary);
+    font-weight: bold;
+    text-align: center;
+    width: 76px;
+    padding: 4px 0;
+    border-radius: 8px;
+}
+
+.landingCardBottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+.landingCardArtist {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.landingCardInfo p:first-child {
+    color: var(--textSecundary);
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.landingCardPrice {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 4px;
+}
+.landingCardPrice p:last-child {
+    font-weight: bold;
+}

@@ -5,36 +5,60 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Primer desafio</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Musimarket</title>
 </head>
 
 <body>
-    <div>
-        <img src="./penguin.jpg" alt="foto de perfil" />
-        <ol>
-            <ul>Nombre: <b>Abigail Belen</b></ul>
-            <ul>Apellido: <b>Sarzuri Clemente</b></ul>
-            <ul>Edad: <b>23 años</b></ul>
-            <ul>Email: <b>Abigailsarzuri@gmail.com</b></ul>
-        </ol>
-        <p>Soy una persona centrada en lo que hago, me gusta mucho codear mientras escucho musica y me apasiona más el
-            front end.<br />Posdata: Como me duele no poder ponerle css a esto</p>
-        <hr />
-        <h2>Contacto</h2>
-        <form>
-            <label for="email" required>Email: </label>
-            <input type="email" id="email" placeholder="Ingresa tu email" />
-            <br />
-            <label for="nombre">Nombre: </label>
-            <input type="text" id="nombre" placeholder="Ingresa tu nombre" />
-            <br />
-            <label for="mensaje" required>Mensaje: </label>
-            <br />
-            <textarea id="mensaje" placeholder="Ingresa tu mensaje" rows="20"></textarea>
-            <br />
-            <input type="submit" value="Enviar" />
-        </form>
-    </div>
+    <header>
+        <div class="logoText">
+            <img src="./assets/logo.png" alt="Musimarket" class="logo" />
+            <h1 class="titulo">Musimarket</h1>
+        </div>
+        <navbar class="navbar">
+            <ul class="navbar-list">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Servicios</a></li>
+                <li><a href="#">Clientes</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </navbar>
+    </header>
+    <main>
+        <section id="landing">
+            <div class="landingInfo">
+                <h1>Compra álbumes desde la comodidad de tu casa</h1>
+                <p>
+                    Musimarket es el mejor Marketplace de álbumes de música en formato <span>fisico</span> o <span>digital</span>. 
+                    Contamos con un amplio catálogo, también nos encargamos del envió. ¡Compra en efectivo, con tarjeta o en cuotas sin interés! Conoce nuestras incluibles ofertas y promociones en cientos de productos.
+                    ¿Que estas esperando?
+                </p>
+                <a href="#">
+                    <img src="./assets/cart.svg" alt="Carrito de compras" class="cartIcon"/>
+                    <p>Comprar</p>
+                </a>
+            </div>
+            <div class="landingCard">
+                <img src="./assets/cardCover.jpeg" alt="Album" class="cardImg"/>
+                <div class="landingCardInfo">
+                    <div class="landingCardTop">
+                        <h3>Perfect World</h3>
+                        <span>Ambos</span>
+                    </div>
+                    <div class="landingCardBottom">
+                        <div class="landingCardArtist">
+                            <p>Artista</p>
+                            <p>TWICE</p>
+                        </div>
+                        <div class="landingCardPrice">
+                            <p>Precio</p>
+                            <p>$ 6.000</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
 
 </html>
