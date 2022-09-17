@@ -82,11 +82,11 @@ main {
 
 #landing {
     margin-top: 90px;
-    padding:  120px 0;
+    padding:  160px 0;
     max-width: 1200px;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -97,14 +97,20 @@ main {
     width: 50%;
 }
 
+.landingInfoBtn {
+    display: flex;
+    gap: 12px;
+}
+
 .landingInfo h1 {
     font-size: 48px;
     width: 70%;
     min-width: 500px;
     font-weight: bold;
     background: -webkit-linear-gradient(var(--degradatePrimary), var(--degradateSecundary));
+    background-clip: text;
+    color: transparent;
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
 }
 
 .landingInfo p {
@@ -202,4 +208,58 @@ main {
 }
 .landingCardPrice p:last-child {
     font-weight: bold;
+}
+
+#moreInfo {
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 40px;
+    width: 90%;
+    padding-bottom: 120px;
+}
+
+.subTitle {
+    font-size: 48px;
+    font-weight: bold;
+    background: -webkit-linear-gradient(var(--degradatePrimary), var(--degradateSecundary));
+    background-clip: text;
+    color: transparent;
+    -webkit-background-clip: text;
+}
+
+.description {
+    line-height: 2;
+    text-align: center;
+    font-size: 20px;
+}
+
+.details {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.boxDetail {
+    display: flex;
+    align-items: center;
+    min-width: 300px;
+    gap: 8px;
+    background-color: var(--backgroundSecundary);
+    padding: 12px 20px;
+    border-radius: 16px;
+}
+
+.boxDetailText {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+.boxDetailText h3 {
+    color: var(--textSecundary)
 }
