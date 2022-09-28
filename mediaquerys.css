@@ -1,0 +1,200 @@
+@media (max-width: 1296px) {
+    /* *{
+        border: 1px solid green;
+    } */
+    header{
+        padding: 0 10%;
+    }
+    #landing {
+        width: 80%;
+    }
+    #moreInfo {
+        width: 80%;
+    }
+    #lastestAlbum{
+        width: 80%;
+    }
+    .details{
+        justify-content: space-start;
+    }
+    .detailsAlbums {
+        gap: 20px;
+    }
+    .boxDetail{
+        /* width: 340px; */
+        margin: 12px 0
+    }
+    .footerContainer {
+        width: 100%;
+        padding: 40px 10% 0 10%;
+        justify-content: space-around;
+    }
+}
+
+@media (max-width: 1024px) {
+    #landing {
+        flex-direction: column;
+        padding:  80px 0;
+        text-align: center;
+    }
+    .landingInfo {
+        width: 100%;
+    }
+    .landingInfo p {
+        width: 80%;
+        align-self: center;
+    }
+    .landingInfoBtn{
+        width: 100%;
+        justify-content: center;
+    }
+    .boxDetail{
+        width: 300px;
+        margin: 12px 0
+    }
+    .descriptionBox{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .descriptionBoxContainer{
+        width: 100%;
+        flex-direction: row;
+    }
+    .descriptionBoxContainer h2 {
+        width: 140px;
+        text-align: start;
+    }
+    .containerSubOffers {
+        text-align: start;
+    }
+    .containerSubOffers p {
+        padding: 12px 0px;
+    }
+    .btnDescription {
+        width: 200px;
+    }
+    .dividerVertical {
+        border-bottom: 1px solid var(--text);
+    }
+    footer {
+        display: block;
+    }
+    .footerContainer {
+        padding: 40px 0 0 0;
+        margin: 0 10%;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .containerBoxFooter {
+        align-items: center;
+        align-items: flex-start;
+    }
+    .detailsAlbums {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 790px) {
+    /* *{
+        border: 1px solid blue;
+    }  */
+    .titulo {
+        display: none;
+    }
+    .landingInfo p {
+        width: 90%;
+        align-self: center;
+    }
+    .details {
+        justify-content: center;
+    }
+    .btnDescription {
+        background-color: var(--textSecundary);
+        height: 58px;
+        border-radius: 100%;
+        cursor: pointer;
+        transition: .2s ease-in-out;
+    }
+    .btnDescription:hover{
+        background-color: #218e6f;
+        transition: .2s ease-in-out;
+    }
+    .btnDescription p{
+        display: none;
+    }
+    #menuToggle, .menuLabel{
+        display: none;
+    }
+    .navbarList {
+        position: absolute;
+        top:90px;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        background-color: var(--backgroundPrimary);
+        border-bottom: 1px solid var(--box);
+        padding: 40px 0;
+        gap: 40px;
+        z-index: 2;
+        display: none;
+    }
+    .navbarList a {
+        font-size: 24px;
+    }
+    .menuLabel {
+        display: flex;
+        cursor: pointer;
+    }
+    .menuLabel img {
+        height: 32px;
+        width: 32px;
+    }
+    #menuToggle:checked + .navbarList {
+        display: flex;
+    }
+}
+
+@media (max-width: 576px) {
+    #landing {
+        margin-top: 40px;
+    }
+    .descriptionBoxContainer {
+        flex-direction: column;
+    }
+    .descriptionBox {
+        gap: 40px;
+    }
+    .btnDescription {
+        height: 40px;
+        background-color: var(--backgroundPrimary);
+        border: none;
+    }
+    .btnDescription:hover{
+        background-color: var(--backgroundPrimary);
+        color: var(--text);
+    }
+    .btnDescription p {
+        display: inline;
+    }
+    .containerSubOffers {
+        text-align: center;
+    }
+    .containerSubOffers p {
+        padding: 12px 32px;
+    }
+    .descriptionBoxContainer h2 {
+        text-align: center;
+    }
+    .landingInfo h1 {
+        text-align: center;
+    }
+    .subTitle {
+        text-align: center;
+    }
+    .landingInfo p {
+        font-size: 18px;
+    }
+    .inputBtn input {
+        width: 100%;
+    }
+}

@@ -19,6 +19,7 @@
     font-family: 'Roboto';
     color: var(--text);
 }
+
 header {
     width: 100%;
     display: flex;
@@ -28,7 +29,7 @@ header {
     position: fixed;
     top: 0;
     padding: 0 64px;
-    border-bottom: 1px solid var(--backgroundSecundary);
+    border-bottom: 1px solid var(--box);
     background: var(--backgroundPrimary);
 }
 
@@ -90,6 +91,10 @@ header {
     background: linear-gradient(90deg, var(--degradatePrimary) 0%, var(--degradateSecundary) 100%);
 }
 
+#menuToggle, .menuLabel{
+    display: none;
+}
+
 main {
     display: flex;
     flex-direction: column;
@@ -107,6 +112,8 @@ main {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    width: 90%;
+    gap: 40px;
 }
 
 .landingInfo {
@@ -123,8 +130,6 @@ main {
 
 .landingInfo h1 {
     font-size: 48px;
-    width: 70%;
-    min-width: 500px;
     font-weight: bold;
     background: -webkit-linear-gradient(var(--degradatePrimary), var(--degradateSecundary));
     background-clip: text;
@@ -210,11 +215,12 @@ main {
     display: flex;
     flex-direction: column;
     gap: 4px;
+    text-align: left;
 }
 
 .landingCardInfo p:first-child {
     color: var(--textSecundary);
-    font-size: 16px;
+    font-size: 18px;
     font-weight: bold;
 }
 
@@ -252,7 +258,7 @@ main {
 .description {
     line-height: 2;
     text-align: center;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .details {
@@ -260,16 +266,18 @@ main {
     display: flex;
     justify-content: space-between;
     gap: 8px;
+    flex-wrap: wrap;
 }
 
 .boxDetail {
     display: flex;
     align-items: center;
-    max-width: 280px;
+    width: 280px;
     gap: 8px;
     background-color: var(--backgroundSecundary);
-    padding: 16px 20px;
+    padding: 20px;
     border-radius: 16px;
+    margin: 4px 0
 }
 
 .boxDetailText {
@@ -303,20 +311,22 @@ main {
     font-size: 48px;
 }
 
-.descriptionBoxContainer h3 {
-    font-size: 20px;
+.containerSubOffers h3 {
+    font-size: 18px;
 }
 
-.descriptionBoxContainer p {
+.containerSubOffers p {
     padding: 12px 32px;
 }
 
 .btnDescription {
     background-color: var(--backgroundPrimary);
     font-weight: bold;
-    font-size: 20px;
+    font-size: 18px;
     display: flex;
     align-items: center;
+    justify-content: center;
+    cursor: pointer;
 }
 
 .btnDescription p {
@@ -326,4 +336,119 @@ main {
 .dividerVertical {
     border-left: 1px solid var(--text);
     border-radius: 100%;
+}
+
+#lastestAlbum {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    justify-content: center;
+    text-align: center;
+    max-width: 1200px;
+    width: 100%;
+    padding-bottom: 80px;
+}
+
+.detailsAlbums {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background: var(--backgroundPrimary);
+    border-top: 1px solid var(--box);
+}
+
+footer h4 {
+    width: 100%;
+    text-align: center;
+    border-top: 1px solid var(--box);
+    margin-top: 40px;
+    padding: 12px 0;
+}
+
+.footerContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    min-width: 1200px;
+    padding-top: 40px ;
+}
+
+.containerBoxFooter{
+    width: 30%;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.containerBoxFooter h3 {
+    font-size: 24px;
+    background: -webkit-linear-gradient(var(--degradatePrimary), var(--degradateSecundary));
+    background-clip: text;
+    color: transparent;
+    -webkit-background-clip: text;
+}
+
+.listFooter {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.listFooter li {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.socialMedia span {
+    cursor: pointer;
+    transition: .2s ease-in-out;
+}
+
+.socialMedia span:hover {
+    color: var(--textSecundary);
+    transition: .2s ease-in-out;
+}
+
+.inputBtn {
+    display: flex;
+    height: 40px;
+}
+
+.inputBtn input {
+    border: none;
+    width: 60%;
+    background-color: var(--box);
+    color: #fff;
+    padding: 0 12px;
+    border-radius: 12px 0 0 12px;
+}
+
+.inputBtn button:hover {
+    background-color: #24a27e;
+    transition: .2s ease-in-out;
+}
+
+.inputBtn input:focus {
+    outline: none;
+}
+
+.inputBtn button {
+    background: var(--textSecundary);
+	border: none;
+	padding: 0;
+	cursor: pointer;
+	outline: inherit;
+    min-width: 40px;
+    border-radius: 0 12px 12px 0;
+    transition: .2s ease-in-out;
 }
