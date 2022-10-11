@@ -32,6 +32,9 @@
 }
 
 @media (max-width: 1024px) {
+    /* *{
+        border: 1px solid violet;
+    } */
     #landing {
         flex-direction: column;
         padding:  80px 0;
@@ -84,6 +87,7 @@
         margin: 0 10%;
         flex-direction: column;
         gap: 20px;
+        width: 90%;
     }
     .containerBoxFooter {
         align-items: center;
@@ -197,4 +201,5 @@
     .inputBtn input {
         width: 100%;
     }
+    
 }
